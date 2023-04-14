@@ -1,0 +1,44 @@
+<nav className="bg-gray-400 navbar navbar-light justify-content-between py-3 px-4">
+      <p className="navbar-brand me-3 mb-2 p-0 border border-2">
+        <img src={logo} alt="logo" className="d-inline-block logo" />
+        <span className="h3 text-green align-bottom mx-1">App</span>
+      </p>
+      <div className="d-flex ms-auto pt-2">
+        {isLogged ?
+        <a className="me-2 my-auto" onClick={openModal}>
+          <img src={add} alt="addMoment" className="d-inline-block" />
+        </a> : ''}
+        <a className="mx-2 my-auto" href="#index">
+          <img src={moments} alt="feed" className="d-inline-block" />
+        </a>
+
+        <a className="mx-2 my-auto" href="#notifications">
+          <img src={heart} alt="heart" className="d-inline-block" />
+        </a>
+        <a className="ms-2 me-1 my-auto" href="#profile">
+          <img src={profile} alt="profile" className="d-inline-block" />
+        </a>
+      </div>
+      <div className="navbar">
+        <form className="d-inline-block d-flex border border-2 rounded-start p-1 ps-0">
+          <input
+            className="form-control mx-1"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button className="btn p-0 text-green" type="submit">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="30"
+              height="30"
+              fill="currentColor"
+              className="bi bi-search"
+              viewBox="0 0 16 16"
+            >
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </nav>

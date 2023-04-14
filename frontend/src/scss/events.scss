@@ -1,0 +1,12 @@
+.rowEvent {
+  display: grid;
+  grid-template-columns: auto minmax(0%, 100%) auto;
+  column-gap: 8px;
+  img {
+    height: 7vh;
+    width: auto;
+  }
+  div {
+    display: block;
+  }
+}
